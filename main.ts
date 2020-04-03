@@ -12,7 +12,7 @@ function start(): void {
 }
 
 function letterCheck(): void {
-  let letterGuess;
+  let letterGuess: string;
   const letterWrong: string[] = [];
   let match: boolean = false;
 
