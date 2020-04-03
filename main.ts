@@ -13,7 +13,7 @@ const start = (): void => {
 
 const letterCheck = (): void => {
   let letterGuess: string;
-  const letterWrong: string[] = [];
+  let letterWrong: string[] = [];
   let match: boolean = false;
 
   document.onkeyup = event => {
