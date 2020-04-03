@@ -2,14 +2,14 @@ var list = ["crossing", "organ", "past", "green", "insight"];
 var randomWord = list[Math.floor(Math.random() * list.length)];
 var letterCorrect = [];
 var i;
-function start() {
+var start = function () {
     for (i = 0; i < randomWord.length; i++) {
         letterCorrect[i] = "__";
     }
     document.getElementById("hidden").innerHTML = letterCorrect.join(" ");
     console.log(randomWord);
-}
-function letterCheck() {
+};
+var letterCheck = function () {
     var letterGuess;
     var letterWrong = [];
     var match = false;
@@ -29,7 +29,7 @@ function letterCheck() {
             document.getElementById("wrongGuess").innerHTML = letterWrong.join(" ");
         }
     };
-}
+};
 start();
 letterCheck();
 //# sourceMappingURL=main.js.map

@@ -3,15 +3,15 @@ const randomWord: string = list[Math.floor(Math.random() * list.length)];
 const letterCorrect: string[] = [];
 let i;
 
-function start(): void {
+const start = (): void => {
   for (i = 0; i < randomWord.length; i++) {
     letterCorrect[i] = "__";
   }
   document.getElementById("hidden").innerHTML = letterCorrect.join(" ");
   console.log(randomWord);
-}
+};
 
-function letterCheck(): void {
+const letterCheck = (): void => {
   let letterGuess: string;
   const letterWrong: string[] = [];
   let match: boolean = false;
@@ -34,7 +34,7 @@ function letterCheck(): void {
       document.getElementById("wrongGuess").innerHTML = letterWrong.join(" ");
     }
   };
-}
+};
 
 start();
 letterCheck();
